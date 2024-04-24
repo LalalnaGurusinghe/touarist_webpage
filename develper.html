@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Powered By</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="prof/shehara.jpg" alt="1" />
+          <h1>Shehara</h1>
+          <div class="details">
+            <h2>Shehara</h2>
+            <p>Team Memeber</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="prof/devdini.jpg" alt="2" />
+          <h1>Devdini</h1>
+          <div class="details">
+            <h2>Devdini</h2>
+            <p>Team Memeber</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="prof/lalana.jpg" alt="3" />
+          <h1>Lalana</h1>
+          <div class="details">
+            <h2>Lalana</h2>
+            <p>Team Memeber</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="prof/dineth.jpg" alt="4" />
+          <h1>Dineth</h1>
+          <div class="details">
+            <h2>Dineth</h2>
+            <p>Team Memeber</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="prof/thambi.jpg" alt="5" />
+          <h1>Thamindu</h1>
+          <div class="details">
+            <h2>Thamindu</h2>
+            <p>Team Memeber</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
